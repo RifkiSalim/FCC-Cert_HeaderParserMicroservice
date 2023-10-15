@@ -1,6 +1,9 @@
+// Imports
 const express = require("express");
-const router = express.Router();
 const requestIp = require("request-ip");
+
+// Init Router
+const router = express.Router();
 
 // Use middleware
 router.use(requestIp.mw());
